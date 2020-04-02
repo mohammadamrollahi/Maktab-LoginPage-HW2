@@ -1,0 +1,105 @@
+@font-face
+{
+    src: url(./Assets/Fonts/Comfortaa-Regular.ttf);
+    font-family: comfotaa;
+}
+@font-face
+{
+    src: url(./Assets/Fonts/Shabnam.ttf);
+    font-family: shabnam;
+}
+body
+{
+    margin: 0;
+}
+.container
+{
+width:100%;
+height: 100vh;
+display: flex;
+direction: rtl;
+}
+.right-menu
+{
+width:45%;
+height:100vh;
+display: flex;
+justify-content: center;
+background-color: white;
+align-items: center;
+}
+.right-menu-container
+{
+width: 70%;
+height: 80vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.entry-div
+{
+width: 100%;;
+height:2vh;
+
+display: flex;
+align-items: center;
+}
+.entry-text
+{
+color: #0094ee;
+font-family: shabnam;
+font-size: 15pt;
+}
+.inputs-container
+{
+    width: 100%;;
+    height:65vh;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.left-menu
+{
+    width:55%;
+    height:100vh;
+    display: flex;
+    background-color: #41c5eb;
+}
+.input-text-div
+{
+width: 100%;
+height:20%;
+border: blue 1px solid;
+}
+.input-top-text
+{
+font-family: shabnam;
+font-size: 18pt;
+}
+.input-bottom-text
+{
+
+}
+.username-input
+{
+
+}
+.password-input
+{
+
+}
+.security-div
+{
+
+}
+.security-input
+{
+
+}
+.security-img
+{
+
+}
