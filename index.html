@@ -4,9 +4,9 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
-  <!--<![endif]-->
+<!--<![endif]-->
 
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Login page</title>
@@ -14,9 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <script src="./Assets/Fonts/all.min.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -24,29 +24,51 @@
       </p>
     <![endif]-->
     <div class="container">
-      <div class="right-menu">
-        <div class="right-menu-container">
-          <div class="entry-div">
-            <p class="entry-text">ورود</p>
-          </div>
-          <div class="inputs-container">
-              <div class="input-text-div">
-                <p class="input-top-text">ورود به حساب کاربری</p>
-                <p class="input-bottom-text">جهت ورود به برنامه نام کاربری و رمزعبور خود را وارد کنید</p>
-              </div>
-              <input type="text"class="username-input">
-              <input type="password" class="password-input">
-              <div class="security-div">
-                  <input type="text"class="security-input">
-                  <img src="./Assets/PNG/securityImg.png" alt="securityCode"class="security-img">
-                  <i class="fas fa-sync-alt"></i>  
-              </div>
-          </div>
-        </div>
-      </div>
+        <div class="right-menu">
+            <div class="right-menu-container">
+                <div class="entry-div">
+                    <p class="entry-text">ورود</p>
+                </div>
+                <div class="inputs-container">
+                    <div class="input-text-div">
+                        <p class="input-top-text">ورود به حساب کاربری</p>
+                        <p class="input-bottom-text">جهت ورود به برنامه نام کاربری و رمزعبور خود را وارد کنید</p>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" placeholder="نام کاربری" class="username-input">
+                        <i  id="icons"class="fas fa-user"></i>
+                        <input type="password" placeholder="رمز عبور" class="password-input">
+                        <i id="icons"class="fas fa-lock"></i>
+                        <div class="security-div">
+                            <i id="refresh-icon"class="fas fa-sync-alt"></i>
+                            <img src="./Assets/PNG/securityImg.png" alt="securityCode" class="security-img">
+                            <i id="board-icon"class="far fa-keyboard"></i>
+                            <input type="text" placeholder="کد امنیتی" class="security-input">
 
-      <div class="left-menu"></div>
+
+                        </div>
+                    </div>
+                    <div class="button-div">
+                    <button class="submitButton">ورود</button>
+                </div>
+                    <div class="remember-div">
+                        
+                        <input class="remember-checkbox"type="checkbox">
+                        
+                        <p class="remember-text">
+                            مرا به خاطر بسپار
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-menu"></div>
     </div>
+    </div>
+
+
     <script src="" async defer></script>
-  </body>
+</body>
+
 </html>

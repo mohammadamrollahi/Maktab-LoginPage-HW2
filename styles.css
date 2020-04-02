@@ -1,105 +1,173 @@
-@font-face
-{
-    src: url(./Assets/Fonts/Comfortaa-Regular.ttf);
-    font-family: comfotaa;
+@font-face {
+  src: url(./Assets/Fonts/Comfortaa-Regular.ttf);
+  font-family: comfotaa;
 }
-@font-face
+@font-face {
+  src: url(./Assets/Fonts/Shabnam.ttf);
+  font-family: shabnam;
+}
+::placeholder {
+  color: gray;
+  font-family: shabnam;
+  font-size: 12pt;
+}
+body {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  direction: rtl;
+}
+.right-menu {
+  width: 45%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+}
+.right-menu-container {
+  width: 60%;
+  height: 790px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entry-div {
+  width: 100%;
+  height: 2vh;
+
+  display: flex;
+  align-items: center;
+}
+.entry-text {
+  color: #0094ee;
+  font-family: shabnam;
+  font-size: 15pt;
+  font-weight: bold;
+}
+.inputs-container {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#refresh-icon
 {
-    src: url(./Assets/Fonts/Shabnam.ttf);
+    color:#7a7a7a;
+}
+.input-text-div {
+  width: 100%;
+  height: 150px;
+}
+.input-top-text {
+  font-family: shabnam;
+  font-size: 18.5pt;
+}
+.input-bottom-text {
+  font-family: shabnam;
+  font-size: 13pt;
+  color: #9e9e9e;
+}
+.inputs {
+  width: 100%;
+  height: 250px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  direction: ltr;
+}
+.username-input {
+  height: 17%;
+  background-color: transparent;
+  border: 0;
+  outline-width: 0ch;
+  border-bottom: 1px solid #bebebe;
+  direction: rtl;
+}
+.password-input {
+  height: 17%;
+  background-color: transparent;
+  border: 0;
+  outline-width: 0ch;
+  border-bottom: 1px solid #bebebe;
+  direction: rtl;
+}
+#icons {
+  padding: 15px;
+  position: relative;
+  top: -15%;
+  color: #bebebe;
+}
+.security-div {
+  height: 17%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.security-input {
+  height: 100%;
+  width: 60%;
+  direction: rtl;
+  background-color: transparent;
+  border: 0;
+  outline-width: 0ch;
+  border-bottom: 1px solid #bebebe;
+}
+.security-img {
+  height: 100%;
+  width: 30%;
+}
+.submitButton
+{
+    width: 100%;
+    height: 60px;
+    font-size: 15pt;
     font-family: shabnam;
-}
-body
-{
-    margin: 0;
-}
-.container
-{
-width:100%;
-height: 100vh;
-display: flex;
-direction: rtl;
-}
-.right-menu
-{
-width:45%;
-height:100vh;
-display: flex;
-justify-content: center;
-background-color: white;
-align-items: center;
-}
-.right-menu-container
-{
-width: 70%;
-height: 80vh;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-}
+    background-color: #0093ed;
+    color: white;
+    border: 0;
+    outline-width: 0;
+    border-radius: 10px;
 
-.entry-div
-{
-width: 100%;;
-height:2vh;
-
-display: flex;
-align-items: center;
 }
-.entry-text
+#board-icon
 {
-color: #0094ee;
-font-family: shabnam;
-font-size: 15pt;
+    color:#bebebe;
+    position: relative;
+    right:-30px;
+    top:5px;
 }
-.inputs-container
+.button-div
 {
-    width: 100%;;
-    height:65vh;
-    border: 1px solid red;
+    height:100px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-end;
 }
-.left-menu
+.left-menu {
+  width: 55%;
+  height: 100vh;
+  display: flex;
+  background-color: #41c5eb;
+}
+.remember-div
 {
-    width:55%;
-    height:100vh;
+    width: 100%;
     display: flex;
-    background-color: #41c5eb;
 }
-.input-text-div
+.remember-checkbox
 {
-width: 100%;
-height:20%;
-border: blue 1px solid;
+    margin-top: 20px;
 }
-.input-top-text
+.remember-text
 {
 font-family: shabnam;
-font-size: 18pt;
-}
-.input-bottom-text
-{
-
-}
-.username-input
-{
-
-}
-.password-input
-{
-
-}
-.security-div
-{
-
-}
-.security-input
-{
-
-}
-.security-img
-{
-
+color:#bebebe
 }
