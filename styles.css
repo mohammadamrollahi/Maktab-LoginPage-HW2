@@ -6,11 +6,7 @@
   src: url(./Assets/Fonts/Shabnam.ttf);
   font-family: shabnam;
 }
-::placeholder {
-  color: #bebebe;
-  font-family: shabnam;
-  font-size: 11pt;
-}
+
 body {
   margin: 0;
 
@@ -93,14 +89,41 @@ align-items: center;
   font-family: shabnam;
   color: #0093ed;
   font-family: comfotaa;
+  box-sizing: inherit;
+  transition: 0.3s border-color;
+ 
+}
+.username-input::placeholder {
+  color: #bebebe;
+  font-family: shabnam;
+  font-size: 11pt;
+  transition: 0.3s;
+  
 }
 .username-input:focus
 {
   border-bottom: 2px solid #0093ed;
+
+}
+.username-input:focus::placeholder
+{
+  color: #0093ed;
+}
+.password-input::placeholder {
+  color: #bebebe;
+  font-family: shabnam;
+  font-size: 11pt;
+
+
 }
 .password-input:focus
 {
   border-bottom: 2px solid #0093ed;
+
+}
+.password-input:focus::placeholder
+{
+  color: #0093ed;
 }
 .password-input {
   height: 17%;
@@ -110,18 +133,21 @@ align-items: center;
   border-bottom: 1px solid #bebebe;
   direction: rtl;
   color: #0093ed;
+  transition: 0.3s border-color;
 }
 #icon1 {
   padding-left: 5px;
   position: relative;
   top: -17%;
   color: #bebebe;
+  transition: 0.3s;
 }
 #icon2 {
   padding-left: 5px;
   position: relative;
   top: -17%;
   color: #bebebe;
+  transition: 0.3s;
 }
 .username-input:focus ~ #icon1
 {
@@ -145,10 +171,23 @@ align-items: center;
   border: 0;
   outline-width: 0ch;
   border-bottom: 1px solid #bebebe;
+  transition: 0.3s border-color;
+}
+.securityInput::placeholder {
+  color: #bebebe;
+  font-family: shabnam;
+  font-size: 11pt;
+  transition: 0.3s;
 }
 .securityInput:focus
 {
   border-bottom: 2px solid #0093ed;
+
+}
+.securityInput:focus::placeholder
+{
+  color: #0093ed;
+  
 }
 .security-img {
   height: 100%;
@@ -182,7 +221,9 @@ opacity: 0.8;;
   position: relative;
   right: -25px;
   top: 5px;
+  transition: 0.3s;
 }
+
 .securityInput:focus ~ #board-icon
 {
 color: #0093ed;
