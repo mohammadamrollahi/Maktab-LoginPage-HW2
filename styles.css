@@ -9,7 +9,6 @@
 
 body {
   margin: 0;
-
 }
 .container {
   width: 100%;
@@ -37,9 +36,8 @@ body {
 .entry-div {
   width: 100%;
   height: 20vh;
-display: flex;
-align-items: center;
-
+  display: flex;
+  align-items: center;
 }
 .entry-text {
   color: #0094ee;
@@ -88,41 +86,31 @@ align-items: center;
   direction: rtl;
   font-family: shabnam;
   color: #0093ed;
-  font-family: comfotaa;
   box-sizing: inherit;
   transition: 0.3s border-color;
- 
+  font-family: shabnam;
 }
 .username-input::placeholder {
   color: #bebebe;
   font-family: shabnam;
   font-size: 11pt;
   transition: 0.3s;
-  
 }
-.username-input:focus
-{
+.username-input:focus {
   border-bottom: 2px solid #0093ed;
-
 }
-.username-input:focus::placeholder
-{
+.username-input:focus::placeholder {
   color: #0093ed;
 }
 .password-input::placeholder {
   color: #bebebe;
   font-family: shabnam;
   font-size: 11pt;
-
-
 }
-.password-input:focus
-{
+.password-input:focus {
   border-bottom: 2px solid #0093ed;
-
 }
-.password-input:focus::placeholder
-{
+.password-input:focus::placeholder {
   color: #0093ed;
 }
 .password-input {
@@ -149,12 +137,10 @@ align-items: center;
   color: #bebebe;
   transition: 0.3s;
 }
-.username-input:focus ~ #icon1
-{
+.username-input:focus ~ #icon1 {
   color: #0093ed;
 }
-.password-input:focus ~ #icon2
-{
+.password-input:focus ~ #icon2 {
   color: #0093ed;
 }
 .security-div {
@@ -179,15 +165,11 @@ align-items: center;
   font-size: 11pt;
   transition: 0.3s;
 }
-.securityInput:focus
-{
+.securityInput:focus {
   border-bottom: 2px solid #0093ed;
-
 }
-.securityInput:focus::placeholder
-{
+.securityInput:focus::placeholder {
   color: #0093ed;
-  
 }
 .security-img {
   height: 100%;
@@ -203,18 +185,15 @@ align-items: center;
   border: 0;
   outline-width: 0;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
-font-weight: 500;
+  -webkit-box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
+  font-weight: 500;
 
-transition:0.3s ease-out;
-
+  transition: 0.3s ease-out;
 }
-.submitButton:hover
-{
-opacity: 0.8;;
-
+.submitButton:hover {
+  opacity: 0.8;
 }
 #board-icon {
   color: #bebebe;
@@ -224,9 +203,8 @@ opacity: 0.8;;
   transition: 0.3s;
 }
 
-.securityInput:focus ~ #board-icon
-{
-color: #0093ed;
+.securityInput:focus ~ #board-icon {
+  color: #0093ed;
 }
 .button-div {
   height: 90px;
@@ -253,56 +231,57 @@ color: #0093ed;
   width: 57%;
   height: 100vh;
   display: flex;
-  background: rgb(140,235,202);
-  background: linear-gradient(225deg, rgba(140,235,202,1) 0%, rgba(118,224,210,1) 6%, rgba(94,212,217,1) 44%, rgba(21,171,245,1) 100%);
+  background: rgb(140, 235, 202);
+  background: linear-gradient(
+    225deg,
+    rgba(140, 235, 202, 1) 0%,
+    rgba(118, 224, 210, 1) 6%,
+    rgba(94, 212, 217, 1) 44%,
+    rgba(21, 171, 245, 1) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
-  
 }
-.logo-img
-{
-position: absolute;
--webkit-filter: drop-shadow(5px 5px 5px #222);
-filter: drop-shadow(0px 10px 20px  rgb(179, 178, 178));
+.logo-img {
+  position: absolute;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(0px 10px 20px rgb(179, 178, 178));
 }
-.angel-div{
-width: 100%;
-height: 100%;
-position: absolute;
+.angel-div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
-.about-div
-{
-width: 100%;
-height: 100%;
-display: flex;
-align-items: flex-end;
-justify-content: center;
-position: absolute;
+.about-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
 }
-.about-text
-{
+.about-text {
   font-size: 13pt;
   font-family: comfotaa;
   color: white;
   font-weight: bold;
 }
 .radar-angle {
-position: relative;
+  position: relative;
   opacity: 0.1;
   width: 20%;
   height: 80%;
-  right:30%;
-  top:-30%;
+  right: 30%;
+  top: -30%;
 
-
-animation-name: angle;
+  animation-name: angle;
   animation-duration: 8s;
-  transform-origin:0% 100%;
+  transform-origin: 0% 100%;
   animation-iteration-count: 100;
-  animation-timing-function:linear;
+  animation-timing-function: linear;
 }
 .radar-circle {
   width: 10px;
@@ -389,13 +368,11 @@ animation-name: angle;
   animation-iteration-count: 100;
 }
 
-
 @keyframes circle {
   to {
-
     opacity: 0;
-   width: 1400px;
-   height: 1400px;
+    width: 1400px;
+    height: 1400px;
   }
 }
 @keyframes angle {
@@ -404,18 +381,14 @@ animation-name: angle;
   }
 }
 
-@media only screen and (max-width: 900px)
-{
-  .container
-  {
+@media only screen and (max-width: 900px) {
+  .container {
     display: unset;
   }
-  .right-menu
-  {
+  .right-menu {
     width: 100%;
   }
-  .left-menu
-  {
+  .left-menu {
     width: 100%;
   }
 }
