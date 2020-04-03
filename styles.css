@@ -7,9 +7,9 @@
   font-family: shabnam;
 }
 ::placeholder {
-  color: gray;
+  color: #bebebe;
   font-family: shabnam;
-  font-size: 12pt;
+  font-size: 11pt;
 }
 body {
   margin: 0;
@@ -22,7 +22,7 @@ body {
   direction: rtl;
 }
 .right-menu {
-  width: 45%;
+  width: 43%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -30,8 +30,8 @@ body {
   align-items: center;
 }
 .right-menu-container {
-  width: 60%;
-  height: 790px;
+  width: 53%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,10 +40,10 @@ body {
 
 .entry-div {
   width: 100%;
-  height: 2vh;
+  height: 20vh;
+display: flex;
+align-items: center;
 
-  display: flex;
-  align-items: center;
 }
 .entry-text {
   color: #0094ee;
@@ -53,7 +53,7 @@ body {
 }
 .inputs-container {
   width: 100%;
-  height: 600px;
+  height: 76vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -63,20 +63,20 @@ body {
 }
 .input-text-div {
   width: 100%;
-  height: 150px;
+  height: 130px;
 }
 .input-top-text {
   font-family: shabnam;
-  font-size: 17.5pt;
+  font-size: 17pt;
 }
 .input-bottom-text {
   font-family: shabnam;
-  font-size: 12pt;
+  font-size: 11pt;
   color: #9e9e9e;
 }
 .inputs {
   width: 100%;
-  height: 150px;
+  height: 170px;
 
   display: flex;
   justify-content: space-around;
@@ -90,6 +90,17 @@ body {
   outline-width: 0ch;
   border-bottom: 1px solid #bebebe;
   direction: rtl;
+  font-family: shabnam;
+  color: #0093ed;
+  font-family: comfotaa;
+}
+.username-input:focus
+{
+  border-bottom: 2px solid #0093ed;
+}
+.password-input:focus
+{
+  border-bottom: 2px solid #0093ed;
 }
 .password-input {
   height: 17%;
@@ -98,12 +109,27 @@ body {
   outline-width: 0ch;
   border-bottom: 1px solid #bebebe;
   direction: rtl;
+  color: #0093ed;
 }
-#icons {
+#icon1 {
   padding-left: 5px;
   position: relative;
-  top: -19%;
+  top: -17%;
   color: #bebebe;
+}
+#icon2 {
+  padding-left: 5px;
+  position: relative;
+  top: -17%;
+  color: #bebebe;
+}
+.username-input:focus ~ #icon1
+{
+  color: #0093ed;
+}
+.password-input:focus ~ #icon2
+{
+  color: #0093ed;
 }
 .security-div {
   height: 17%;
@@ -111,7 +137,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.security-input {
+.securityInput {
   height: 100%;
   width: 60%;
   direction: rtl;
@@ -120,29 +146,49 @@ body {
   outline-width: 0ch;
   border-bottom: 1px solid #bebebe;
 }
+.securityInput:focus
+{
+  border-bottom: 2px solid #0093ed;
+}
 .security-img {
   height: 100%;
   width: 30%;
 }
 .submitButton {
   width: 100%;
-  height: 60px;
-  font-size: 15pt;
+  height: 50px;
+  font-size: 13pt;
   font-family: shabnam;
   background-color: #0093ed;
   color: white;
   border: 0;
   outline-width: 0;
   border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
+font-weight: 500;
+
+transition:0.3s ease-out;
+
+}
+.submitButton:hover
+{
+opacity: 0.8;;
+
 }
 #board-icon {
   color: #bebebe;
   position: relative;
-  right: -30px;
+  right: -25px;
   top: 5px;
 }
+.securityInput:focus ~ #board-icon
+{
+color: #0093ed;
+}
 .button-div {
-  height: 110px;
+  height: 90px;
   width: 100%;
   display: flex;
   align-items: flex-end;
@@ -150,59 +196,81 @@ body {
 
 .remember-div {
   width: 100%;
+  height: 50px;
   display: flex;
+  align-items: flex-end;
 }
-.remember-checkbox {
-  margin-top: 15px;
-}
+
 .remember-text {
   font-family: shabnam;
   color: #bebebe;
-  font-size: 10pt;
+  font-size: 9pt;
+  padding: 0;
+  margin: 0;
 }
 .left-menu {
-  width: 55%;
+  width: 57%;
   height: 100vh;
   display: flex;
-  background: rgb(153,241,219);
-background: linear-gradient(225deg, rgba(153,241,219,1) 0%, rgba(104,218,227,1) 38%, rgba(37,187,238,1) 100%);
+  background: rgb(140,235,202);
+  background: linear-gradient(225deg, rgba(140,235,202,1) 0%, rgba(118,224,210,1) 6%, rgba(94,212,217,1) 44%, rgba(21,171,245,1) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
+  
 }
 .logo-img
 {
 position: absolute;
+-webkit-filter: drop-shadow(5px 5px 5px #222);
+filter: drop-shadow(0px 10px 20px  rgb(179, 178, 178));
 }
-
 .angel-div{
 width: 100%;
 height: 100%;
-
+position: absolute;
+}
+.about-div
+{
+width: 100%;
+height: 100%;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+position: absolute;
+}
+.about-text
+{
+  font-size: 13pt;
+  font-family: comfotaa;
+  color: white;
+  font-weight: bold;
 }
 .radar-angle {
 position: relative;
-  opacity: 0.2;
+  opacity: 0.1;
   width: 20%;
   height: 80%;
+  right:30%;
+  top:-30%;
 
-  right: 50% ;
-  top: -30%;
+
 animation-name: angle;
   animation-duration: 8s;
-  transform-origin:100% 100%;
+  transform-origin:0% 100%;
   animation-iteration-count: 100;
   animation-timing-function:linear;
 }
 .radar-circle {
   width: 10px;
   height: 10px;
-  border-radius: 1000px;
+  border-radius: 2000px;
   background-color: white;
-  opacity: 0.2;
+  opacity: 0.3;
   animation-name: circle;
-  animation-duration: 8s;
+  animation-duration: 9s;
 
   position: absolute;
   animation-iteration-count: 100;
@@ -210,72 +278,72 @@ animation-name: angle;
 .radar-circle2 {
   width: 10px;
   height: 10px;
-  border-radius: 1000px;
+  border-radius: 2000px;
   background-color: white;
-  opacity: 0.2;
+  opacity: 0.25;
   animation-name: circle;
-  animation-duration: 8s;
-  animation-delay: 0.5s;
+  animation-duration: 9s;
+  animation-delay: 0.6s;
   position: absolute;
   animation-iteration-count: 100;
 }
 .radar-circle3 {
   width: 10px;
   height: 10px;
-  border-radius: 1000px;
+  border-radius: 2000px;
   background-color: white;
   opacity: 0.2;
   animation-name: circle;
-  animation-duration: 8s;
-  animation-delay: 1s;
+  animation-duration: 9s;
+  animation-delay: 1.2s;
   position: absolute;
   animation-iteration-count: 100;
 }
 .radar-circle4 {
   width: 10px;
   height: 10px;
-  border-radius: 1000px;
+  border-radius: 2000px;
   background-color: white;
-  opacity: 0.2;
+  opacity: 0.15;
   animation-name: circle;
-  animation-duration: 8s;
-  animation-delay: 1.5s;
+  animation-duration: 9s;
+  animation-delay: 1.8s;
   position: absolute;
   animation-iteration-count: 100;
 }
 .radar-circle5 {
   width: 10px;
   height: 10px;
-  border-radius: 1000px;
+  border-radius: 2000px;
   background-color: white;
-  opacity: 0.2;
+  opacity: 0.1;
   animation-name: circle;
-  animation-duration: 8s;
-  animation-delay: 2s;
+  animation-duration: 9s;
+  animation-delay: 2.4s;
   position: absolute;
   animation-iteration-count: 100;
 }
 .radar-circle6 {
   width: 10px;
   height: 10px;
-  border-radius: 1000px;
+  border-radius: 2000px;
   background-color: white;
-  opacity: 0.2;
+  opacity: 0.05;
   animation-name: circle;
-  animation-duration: 8s;
-  animation-delay: 2.5s;
+  animation-duration: 9s;
+  animation-delay: 3s;
   position: absolute;
   animation-iteration-count: 100;
 }
 .radar-circle7 {
   width: 10px;
   height: 10px;
-  border-radius: 1000px;
+  border-radius: 2000px;
   background-color: white;
-  opacity: 0.2;
+  opacity: 0.01;
   animation-name: circle;
-  animation-duration: 8s;
-  animation-delay: 3s;
+  animation-duration: 9s;
+  animation-delay: 3.6s;
   position: absolute;
   animation-iteration-count: 100;
 }
@@ -283,9 +351,10 @@ animation-name: angle;
 
 @keyframes circle {
   to {
-    width: 1200px;
-    height: 1200px;
+
     opacity: 0;
+   width: 1400px;
+   height: 1400px;
   }
 }
 @keyframes angle {
@@ -293,3 +362,4 @@ animation-name: angle;
     transform: rotate(360deg);
   }
 }
+
