@@ -363,3 +363,18 @@ animation-name: angle;
   }
 }
 
+@media only screen and (max-width: 900px)
+{
+  .container
+  {
+    display: unset;
+  }
+  .right-menu
+  {
+    width: 100%;
+  }
+  .left-menu
+  {
+    width: 100%;
+  }
+}
