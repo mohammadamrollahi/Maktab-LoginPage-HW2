@@ -13,6 +13,7 @@
 }
 body {
   margin: 0;
+
 }
 .container {
   width: 100%;
@@ -52,14 +53,13 @@ body {
 }
 .inputs-container {
   width: 100%;
-  height: 650px;
+  height: 600px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-#refresh-icon
-{
-    color:#7a7a7a;
+#refresh-icon {
+  color: #7a7a7a;
 }
 .input-text-div {
   width: 100%;
@@ -67,19 +67,19 @@ body {
 }
 .input-top-text {
   font-family: shabnam;
-  font-size: 18.5pt;
+  font-size: 17.5pt;
 }
 .input-bottom-text {
   font-family: shabnam;
-  font-size: 13pt;
+  font-size: 12pt;
   color: #9e9e9e;
 }
 .inputs {
   width: 100%;
-  height: 250px;
+  height: 150px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   direction: ltr;
 }
@@ -100,9 +100,9 @@ body {
   direction: rtl;
 }
 #icons {
-  padding: 15px;
+  padding-left: 5px;
   position: relative;
-  top: -15%;
+  top: -19%;
   color: #bebebe;
 }
 .security-div {
@@ -124,50 +124,172 @@ body {
   height: 100%;
   width: 30%;
 }
-.submitButton
-{
-    width: 100%;
-    height: 60px;
-    font-size: 15pt;
-    font-family: shabnam;
-    background-color: #0093ed;
-    color: white;
-    border: 0;
-    outline-width: 0;
-    border-radius: 10px;
+.submitButton {
+  width: 100%;
+  height: 60px;
+  font-size: 15pt;
+  font-family: shabnam;
+  background-color: #0093ed;
+  color: white;
+  border: 0;
+  outline-width: 0;
+  border-radius: 5px;
+}
+#board-icon {
+  color: #bebebe;
+  position: relative;
+  right: -30px;
+  top: 5px;
+}
+.button-div {
+  height: 110px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
 
+.remember-div {
+  width: 100%;
+  display: flex;
 }
-#board-icon
-{
-    color:#bebebe;
-    position: relative;
-    right:-30px;
-    top:5px;
+.remember-checkbox {
+  margin-top: 15px;
 }
-.button-div
-{
-    height:100px;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
+.remember-text {
+  font-family: shabnam;
+  color: #bebebe;
+  font-size: 10pt;
 }
 .left-menu {
   width: 55%;
   height: 100vh;
   display: flex;
-  background-color: #41c5eb;
+  background: rgb(153,241,219);
+background: linear-gradient(225deg, rgba(153,241,219,1) 0%, rgba(104,218,227,1) 38%, rgba(37,187,238,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-.remember-div
+.logo-img
 {
-    width: 100%;
-    display: flex;
+position: absolute;
 }
-.remember-checkbox
-{
-    margin-top: 20px;
+
+.angel-div{
+width: 100%;
+height: 100%;
+
 }
-.remember-text
-{
-font-family: shabnam;
-color:#bebebe
+.radar-angle {
+position: relative;
+  opacity: 0.2;
+  width: 20%;
+  height: 80%;
+
+  right: 50% ;
+  top: -30%;
+animation-name: angle;
+  animation-duration: 8s;
+  transform-origin:100% 100%;
+  animation-iteration-count: 100;
+  animation-timing-function:linear;
+}
+.radar-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 1000px;
+  background-color: white;
+  opacity: 0.2;
+  animation-name: circle;
+  animation-duration: 8s;
+
+  position: absolute;
+  animation-iteration-count: 100;
+}
+.radar-circle2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 1000px;
+  background-color: white;
+  opacity: 0.2;
+  animation-name: circle;
+  animation-duration: 8s;
+  animation-delay: 0.5s;
+  position: absolute;
+  animation-iteration-count: 100;
+}
+.radar-circle3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 1000px;
+  background-color: white;
+  opacity: 0.2;
+  animation-name: circle;
+  animation-duration: 8s;
+  animation-delay: 1s;
+  position: absolute;
+  animation-iteration-count: 100;
+}
+.radar-circle4 {
+  width: 10px;
+  height: 10px;
+  border-radius: 1000px;
+  background-color: white;
+  opacity: 0.2;
+  animation-name: circle;
+  animation-duration: 8s;
+  animation-delay: 1.5s;
+  position: absolute;
+  animation-iteration-count: 100;
+}
+.radar-circle5 {
+  width: 10px;
+  height: 10px;
+  border-radius: 1000px;
+  background-color: white;
+  opacity: 0.2;
+  animation-name: circle;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  position: absolute;
+  animation-iteration-count: 100;
+}
+.radar-circle6 {
+  width: 10px;
+  height: 10px;
+  border-radius: 1000px;
+  background-color: white;
+  opacity: 0.2;
+  animation-name: circle;
+  animation-duration: 8s;
+  animation-delay: 2.5s;
+  position: absolute;
+  animation-iteration-count: 100;
+}
+.radar-circle7 {
+  width: 10px;
+  height: 10px;
+  border-radius: 1000px;
+  background-color: white;
+  opacity: 0.2;
+  animation-name: circle;
+  animation-duration: 8s;
+  animation-delay: 3s;
+  position: absolute;
+  animation-iteration-count: 100;
+}
+
+
+@keyframes circle {
+  to {
+    width: 1200px;
+    height: 1200px;
+    opacity: 0;
+  }
+}
+@keyframes angle {
+  to {
+    transform: rotate(360deg);
+  }
 }
